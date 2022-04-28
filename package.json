@@ -4,7 +4,7 @@
   "main": "main.js",
   "version": "0.0.0",
   "scripts": {
-    "electron-start": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\" ",
+    "electron-start": "concurrently \"npm run dev\" \" electron .\" ",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -12,6 +12,7 @@
   "dependencies": {
     "concurrently": "^7.1.0",
     "electron": "^18.1.0",
+    "electron-window-state": "^5.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "wait-on": "^6.0.1"
